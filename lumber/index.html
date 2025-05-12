@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Лесоруб</title>
+    
+    <!-- Telegram Web App API -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <!-- PixiJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
+    
+    <!-- Игровые скрипты -->
+    <script src="js/game-storage.js"></script>
+    <script src="js/game-core.js"></script>
+    <script src="js/game.js"></script>
+    
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div id="page_wrap">
+      <!-- Игровой интерфейс -->
+      <div class="game_interface">
+        <div class="score_wrap">
+          <div class="score">Счет: <span id="score_value">0</span></div>
+          <div class="high_score">Рекорд: <span id="high_score_value">0</span></div>
+        </div>
+        <button id="share_button" class="share_button">Поделиться</button>
+      </div>
+      
+      <!-- Игровое поле -->
+      <div id="canvas_wrap"></div>
+      
+      <!-- Экран окончания игры -->
+      <div id="game_over" class="game_over" style="display: none;">
+        <div class="game_over_content">
+          <h2>Игра окончена!</h2>
+          <p>Ваш счет: <span id="final_score">0</span></p>
+          <button id="start_button" class="start_button">Играть снова</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

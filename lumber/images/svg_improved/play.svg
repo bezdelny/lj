@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон кнопки -->
+  <circle cx="30" cy="30" r="28" fill="#f2c38c" stroke="#e4b072" stroke-width="4"/>
+  
+  <!-- Иконка воспроизведения -->
+  <path d="M25 20 L40 30 L25 40 Z" 
+        fill="#715128"/>
+  
+  <!-- Эффект тени -->
+  <circle cx="30" cy="30" r="26" 
+          fill="none" 
+          stroke="rgba(0,0,0,0.1)" 
+          stroke-width="2"/>
+  
+  <!-- Дополнительный эффект свечения -->
+  <circle cx="30" cy="30" r="24" 
+          fill="none" 
+          stroke="rgba(113,81,40,0.2)" 
+          stroke-width="1"/>
+</svg> 
